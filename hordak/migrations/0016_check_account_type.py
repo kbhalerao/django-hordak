@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 RETURNS TRIGGER AS
             $$
             BEGIN
-                IF NEW.parent_id::BOOL THEN
+                IF NEW.parent_id::INT::BOOL THEN
                     NEW.type = (SELECT type FROM hordak_account WHERE id = NEW.parent_id);
                 END IF;
                 RETURN NEW;
