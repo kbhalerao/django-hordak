@@ -11,7 +11,6 @@ from hordak.models import StatementImport
 from hordak.models.core import StatementLine, Account
 from hordak.tests.utils import DataProvider
 
-
 class TellerIoDataSourceTestCase(DataProvider, TestCase):
     def setUp(self):
         self.bank = self.account(name="bank", type=Account.TYPES.asset, is_bank_account=True)
