@@ -6,7 +6,7 @@ import django.db.models.deletion
 import django.utils.timezone
 import django_smalluuid.models
 import djmoney.models.fields
-import hordak.models.core
+import tradeCore.hordak.models.core
 import mptt.fields
 
 
@@ -124,7 +124,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='statementimport',
             name='extra',
-            field=models.JSONField(default=hordak.models.core.json_default, help_text='Any extra data relating to the import, probably specific to the data source.', verbose_name='extra'),
+            field=models.JSONField(default=tradeCore.hordak.models.core.json_default, help_text='Any extra data relating to the import, probably specific to the data source.', verbose_name='extra'),
         ),
         migrations.AlterField(
             model_name='statementimport',
@@ -169,7 +169,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='statementline',
             name='source_data',
-            field=models.JSONField(default=hordak.models.core.json_default, help_text='Original data received from the data source.', verbose_name='source data'),
+            field=models.JSONField(default=tradeCore.hordak.models.core.json_default, help_text='Original data received from the data source.', verbose_name='source data'),
         ),
         migrations.AlterField(
             model_name='statementline',

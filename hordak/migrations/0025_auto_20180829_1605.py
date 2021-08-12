@@ -4,7 +4,7 @@ from decimal import Decimal
 from django.db import migrations, models
 import djmoney.models.fields
 
-from hordak.defaults import DECIMAL_PLACES, MAX_DIGITS
+from tradeCore.hordak.defaults import DECIMAL_PLACES, MAX_DIGITS
 
 
 class Migration(migrations.Migration):

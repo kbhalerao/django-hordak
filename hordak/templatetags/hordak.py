@@ -4,7 +4,7 @@ import logging
 import babel.numbers
 from django import template
 from django.utils.safestring import mark_safe
-from hordak.utilities.currency import Balance
+from tradeCore.hordak.utilities.currency import Balance
 from moneyed import Money
 from decimal import Decimal
 

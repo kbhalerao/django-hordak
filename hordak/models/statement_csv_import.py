@@ -9,7 +9,7 @@ from django_smalluuid.models import SmallUUIDField, uuid_default
 from model_utils import Choices
 from tablib import Dataset
 
-from hordak.utilities.statement_import import DATE_FORMATS
+from tradeCore.hordak.utilities.statement_import import DATE_FORMATS
 
 
 class TransactionCsvImport(models.Model):

@@ -31,11 +31,11 @@ from moneyed import Money
 from mptt.models import MPTTModel, TreeForeignKey, TreeManager
 from model_utils import Choices
 
-from hordak import defaults
-from hordak import exceptions
-from hordak.defaults import MAX_DIGITS, DECIMAL_PLACES
+from tradeCore.hordak import defaults
+from tradeCore.hordak import exceptions
+from tradeCore.hordak.defaults import MAX_DIGITS, DECIMAL_PLACES
 
-from hordak.utilities.currency import Balance
+from tradeCore.hordak.utilities.currency import Balance
 
 
 #: Debit

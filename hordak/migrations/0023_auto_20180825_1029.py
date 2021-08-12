@@ -2,7 +2,7 @@
 
 import django.contrib.postgres.fields.jsonb
 from django.db import migrations
-import hordak.models.core
+import tradeCore.hordak.models.core
 
 
 class Migration(migrations.Migration):
@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
             model_name="statementimport",
             name="extra",
             field=django.contrib.postgres.fields.jsonb.JSONField(
-                default=hordak.models.core.json_default,
+                default=tradeCore.hordak.models.core.json_default,
                 help_text="Any extra data relating to the import, probably specific to the data source.",
             ),
         ),
@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
             model_name="statementline",
             name="source_data",
             field=django.contrib.postgres.fields.jsonb.JSONField(
-                default=hordak.models.core.json_default,
+                default=tradeCore.hordak.models.core.json_default,
                 help_text="Original data received from the data source.",
             ),
         ),

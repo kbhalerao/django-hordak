@@ -59,8 +59,8 @@ from django.utils.translation import to_locale
 from moneyed import Money
 from moneyed.localization import format_money
 
-from hordak import defaults
-from hordak.exceptions import (
+from tradeCore.hordak import defaults
+from tradeCore.hordak.exceptions import (
     LossyCalculationError,
     BalanceComparisonError,
     TradingAccountRequiredError,

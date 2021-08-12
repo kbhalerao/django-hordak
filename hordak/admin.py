@@ -5,7 +5,7 @@ from django.db.models import Sum
 
 from mptt.admin import MPTTModelAdmin
 
-from hordak.models import TransactionCsvImportColumn, TransactionCsvImport
+from tradeCore.hordak.models import TransactionCsvImportColumn, TransactionCsvImport
 from . import models
 
 
