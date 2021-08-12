@@ -2,7 +2,7 @@
 .DS_Store
 .config.ini
 *.sqlite3
-*.pyc
+.pyc
 *.swp
 static/
 /.idea
