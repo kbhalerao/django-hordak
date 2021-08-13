@@ -1,8 +1,8 @@
 from django.test import TestCase
-from hordak.forms.transactions import SimpleTransactionForm, CurrencyTradeForm
-from hordak.models import Account, Transaction
-from hordak.tests.utils import DataProvider
-from hordak.utilities.currency import Balance
+from tradeCore.hordak.forms.transactions import SimpleTransactionForm, CurrencyTradeForm
+from tradeCore.hordak.models import Account, Transaction
+from tradeCore.hordak.tests.utils import DataProvider
+from tradeCore.hordak.utilities.currency import Balance
 from moneyed import Money
 
 

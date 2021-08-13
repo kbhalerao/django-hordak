@@ -4,8 +4,8 @@ from django.db import transaction
 from django.forms import BaseInlineFormSet, inlineformset_factory
 from djmoney.forms import MoneyField
 
-from hordak.defaults import DECIMAL_PLACES, MAX_DIGITS, DEFAULT_CURRENCY, CURRENCIES
-from hordak.models import Account, Transaction, Leg
+from tradeCore.hordak.defaults import DECIMAL_PLACES, MAX_DIGITS, DEFAULT_CURRENCY, CURRENCIES
+from tradeCore.hordak.models import Account, Transaction, Leg
 from moneyed import Money
 from mptt.forms import TreeNodeChoiceField
 

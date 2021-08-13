@@ -5,9 +5,9 @@ import tablib
 from django.test import TestCase
 from django.utils.datetime_safe import date
 
-from hordak.models import Account, StatementImport, StatementLine
-from hordak.resources import StatementLineResource
-from hordak.tests.utils import DataProvider
+from tradeCore.hordak.models import Account, StatementImport, StatementLine
+from tradeCore.hordak.resources import StatementLineResource
+from tradeCore.hordak.tests.utils import DataProvider
 
 
 class StatementLineResourceTestCase(DataProvider, TestCase):

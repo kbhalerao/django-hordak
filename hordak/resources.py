@@ -4,8 +4,8 @@ from django.utils.datetime_safe import datetime
 from import_export import resources
 from import_export.results import Result as _Result
 
-from hordak.models import StatementLine, TransactionCsvImportColumn
-from hordak.utilities.statement_import import DATE_FORMATS
+from tradeCore.hordak.models import StatementLine, TransactionCsvImportColumn
+from tradeCore.hordak.utilities.statement_import import DATE_FORMATS
 
 
 class Result(_Result):

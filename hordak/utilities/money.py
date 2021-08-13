@@ -1,6 +1,6 @@
 from decimal import Decimal
 
-from hordak.defaults import DECIMAL_PLACES
+from tradeCore.hordak.defaults import DECIMAL_PLACES
 
 def ratio_split(amount, ratios):
     """ Split in_value according to the ratios specified in `ratios`

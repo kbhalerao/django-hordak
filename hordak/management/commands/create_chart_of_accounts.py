@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
 
-from hordak.models import Account
+from tradeCore.hordak.models import Account
 
 
 class Command(BaseCommand):

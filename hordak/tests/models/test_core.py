@@ -9,10 +9,10 @@ from django.test.testcases import (
 from django.db import transaction as db_transaction
 from moneyed.classes import Money
 
-from hordak.models import Account, Transaction, Leg, StatementImport, StatementLine, DEBIT, CREDIT
-from hordak import exceptions
-from hordak.tests.utils import DataProvider
-from hordak.utilities.currency import Balance
+from tradeCore.hordak.models import Account, Transaction, Leg, StatementImport, StatementLine, DEBIT, CREDIT
+from tradeCore.hordak import exceptions
+from tradeCore.hordak.tests.utils import DataProvider
+from tradeCore.hordak.utilities.currency import Balance
 
 
 class AccountTestCase(DataProvider, TransactionTestCase):

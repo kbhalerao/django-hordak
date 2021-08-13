@@ -1,6 +1,6 @@
 from django import forms
 
-from hordak.models import Account
+from tradeCore.hordak.models import Account
 
 
 class AccountForm(forms.ModelForm):

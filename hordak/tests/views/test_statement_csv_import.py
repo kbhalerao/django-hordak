@@ -5,9 +5,9 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase, Client
 from django.urls import reverse
 
-from hordak.models import TransactionCsvImport, StatementLine, TransactionCsvImportColumn
-from hordak.tests.utils import DataProvider
-from hordak.views import CreateImportView
+from tradeCore.hordak.models import TransactionCsvImport, StatementLine, TransactionCsvImportColumn
+from tradeCore.hordak.tests.utils import DataProvider
+from tradeCore.hordak.views import CreateImportView
 
 
 class DryRunViewTestCase(DataProvider, TestCase):

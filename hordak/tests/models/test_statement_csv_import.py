@@ -2,8 +2,8 @@ import six
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 
-from hordak.models import TransactionCsvImport
-from hordak.tests.utils import DataProvider
+from tradeCore.hordak.models import TransactionCsvImport
+from tradeCore.hordak.tests.utils import DataProvider
 
 
 class TransactionCsvImportTestCase(DataProvider, TestCase):

@@ -7,9 +7,9 @@ from django.urls import reverse_lazy, reverse
 from django.views import View
 from django.views.generic import CreateView, ListView, DeleteView
 
-from hordak.forms import SimpleTransactionForm, TransactionForm, LegFormSet
-from hordak.forms.transactions import CurrencyTradeForm
-from hordak.models import StatementLine, Leg, Transaction
+from tradeCore.hordak.forms import SimpleTransactionForm, TransactionForm, LegFormSet
+from tradeCore.hordak.forms.transactions import CurrencyTradeForm
+from tradeCore.hordak.models import StatementLine, Leg, Transaction
 
 
 class TransactionCreateView(LoginRequiredMixin, CreateView):

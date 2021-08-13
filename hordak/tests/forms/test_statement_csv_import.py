@@ -2,9 +2,9 @@ import six
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 
-from hordak.forms.statement_csv_import import TransactionCsvImportForm
-from hordak.models import Account, TransactionCsvImport
-from hordak.tests.utils import DataProvider
+from tradeCore.hordak.forms.statement_csv_import import TransactionCsvImportForm
+from tradeCore.hordak.models import Account, TransactionCsvImport
+from tradeCore.hordak.tests.utils import DataProvider
 
 
 class TransactionCsvImportFormTestCase(DataProvider, TestCase):

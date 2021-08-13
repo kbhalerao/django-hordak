@@ -1,8 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
 
-from hordak.models import Account, StatementImport
-from hordak.utilities.currency import Balance
+from tradeCore.hordak.models import Account, StatementImport
+from tradeCore.hordak.utilities.currency import Balance
 
 
 class DataProvider(object):

@@ -3,9 +3,9 @@ import six
 from datetime import date
 from moneyed import Money
 
-from hordak.exceptions import LossyCalculationError
-from hordak.models import Account
-from hordak.tests.utils import DataProvider, BalanceUtils
+from tradeCore.hordak.exceptions import LossyCalculationError
+from tradeCore.hordak.models import Account
+from tradeCore.hordak.tests.utils import DataProvider, BalanceUtils
 
 if six.PY2:
     from mock import patch
@@ -19,7 +19,7 @@ from django.test import TestCase
 from django.test import override_settings
 from django.core.cache import cache
 
-from hordak.utilities.currency import (
+from tradeCore.hordak.utilities.currency import (
     _cache_key,
     _cache_timeout,
     BaseBackend,
@@ -65,7 +65,7 @@ class FunctionsTestCase(CacheTestCase):
 
 
 class BaseBackendTestCase(CacheTestCase):
-    @patch("hordak.defaults.INTERNAL_CURRENCY", "XXX")
+    @patch("tradeCore.hordak.defaults.INTERNAL_CURRENCY", "XXX")
     def test_bad_currency(self):
         with self.assertRaises(ValueError):
             TestBackend()
@@ -136,7 +136,7 @@ class ConverterTestCase(CacheTestCase):
 
 
 @override_settings(CACHES=DUMMY_CACHE)
-@patch("hordak.utilities.currency.converter", Converter(backend=TestBackend()))
+@patch("tradeCore.hordak.utilities.currency.converter", Converter(backend=TestBackend()))
 class BalanceTestCase(CacheTestCase):
     def setUp(self):
         self.balance_1 = Balance([Money(100, "USD"), Money(100, "EUR")])

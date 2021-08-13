@@ -1,9 +1,9 @@
 from django.test import TestCase
 from django.urls import reverse
 
-from hordak.forms.accounts import AccountForm
-from hordak.models import Account
-from hordak.tests.utils import DataProvider
+from tradeCore.hordak.forms.accounts import AccountForm
+from tradeCore.hordak.models import Account
+from tradeCore.hordak.tests.utils import DataProvider
 
 
 class AccountListViewTestCase(DataProvider, TestCase):

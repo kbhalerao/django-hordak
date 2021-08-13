@@ -1,7 +1,7 @@
 from django.conf.urls import url, include
 
-from hordak.views import accounts, statement_csv_import
-from hordak.views import transactions
+from tradeCore.hordak.views import accounts, statement_csv_import
+from tradeCore.hordak.views import transactions
 
 app_name = "hordak"
 

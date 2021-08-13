@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import inlineformset_factory
 
-from hordak.models import Account, TransactionCsvImport, StatementImport, TransactionCsvImportColumn
+from tradeCore.hordak.models import Account, TransactionCsvImport, StatementImport, TransactionCsvImportColumn
 
 
 class TransactionCsvImportForm(forms.ModelForm):

@@ -5,12 +5,12 @@ from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, UpdateView, DetailView
 
-from hordak.forms.statement_csv_import import (
+from tradeCore.hordak.forms.statement_csv_import import (
     TransactionCsvImportForm,
     TransactionCsvImportColumnFormSet,
 )
-from hordak.models import TransactionCsvImport
-from hordak.resources import StatementLineResource
+from tradeCore.hordak.models import TransactionCsvImport
+from tradeCore.hordak.resources import StatementLineResource
 
 
 class CreateImportView(LoginRequiredMixin, CreateView):

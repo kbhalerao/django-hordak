@@ -3,11 +3,11 @@ from unittest.mock import patch
 
 from django.test import TestCase
 from django.urls import reverse
-from hordak.models import Account, StatementImport, StatementLine, Transaction
-from hordak.tests.utils import DataProvider
+from tradeCore.hordak.models import Account, StatementImport, StatementLine, Transaction
+from tradeCore.hordak.tests.utils import DataProvider
 from moneyed import Money
 
-from hordak.utilities.currency import Balance
+from tradeCore.hordak.utilities.currency import Balance
 
 
 class TransactionCreateViewTestCase(DataProvider, TestCase):
@@ -23,8 +23,8 @@ class TransactionCreateViewTestCase(DataProvider, TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("form", response.context)
 
-    @patch("hordak.forms.transactions.DEFAULT_CURRENCY", "GBP")
-    @patch("hordak.forms.transactions.CURRENCIES", ["EUR", "USD"])
+    @patch("tradeCore.hordak.forms.transactions.DEFAULT_CURRENCY", "GBP")
+    @patch("tradeCore.hordak.forms.transactions.CURRENCIES", ["EUR", "USD"])
     def test_get_currency_choices(self):
         response = self.client.get(self.view_url)
         self.assertEqual(response.status_code, 200)
@@ -311,8 +311,8 @@ class ReconcileTransactionsViewTestCase(DataProvider, TestCase):
         self.assertEqual(Transaction.objects.count(), 0)
 
         leg_formset = response.context["leg_formset"]
-        self.assertEqual(leg_formset.non_form_errors(), ["Amounts must add up to 100.16"])
-        self.assertIn("Amounts must add up to 100.16", response.content.decode("utf8"))
+        self.assertEqual(leg_formset.non_form_errors(), ["Amounts must add up to 100.1600"])
+        self.assertIn("Amounts must add up to 100.1600", response.content.decode("utf8"))
 
     def test_post_reconcile_negative_amount(self):
         self.create_statement_import()

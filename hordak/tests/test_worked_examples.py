@@ -2,9 +2,9 @@ from django.test import TestCase
 from django.db import transaction as db_transaction
 from moneyed import Money
 
-from hordak.models import Account, Transaction, Leg, StatementImport, StatementLine
-from hordak.tests.utils import DataProvider, BalanceUtils
-from hordak.utilities.currency import Balance
+from tradeCore.hordak.models import Account, Transaction, Leg, StatementImport, StatementLine
+from tradeCore.hordak.tests.utils import DataProvider, BalanceUtils
+from tradeCore.hordak.utilities.currency import Balance
 
 
 class InitialEquityTestCase(DataProvider, TestCase):
