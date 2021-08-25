@@ -35,7 +35,7 @@ urlpatterns = [
         transactions.UnreconcileView.as_view(),
         name="transactions_unreconcile",
     ),
-    url(r"^$", accounts.AccountListView.as_view(), name="accounts_list"),
+    url(r"^accounts/$", accounts.AccountListView.as_view(), name="accounts_list"),
     url(r"^accounts/create/$", accounts.AccountCreateView.as_view(), name="accounts_create"),
     url(
         r"^accounts/update/(?P<uuid>.+)/$",
